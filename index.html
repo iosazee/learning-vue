@@ -7,11 +7,20 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <h1>Hello, Vue :) </h1>
+    <h1>Hello, Vue  </h1>
 
     <div id="app">
+
         <h2>I am the template now</h2>
-    <p> {{ title }} . {{author}} . {{age}} </p>
+    <p> {{ title }} - {{ author }} - {{ age }} </p>
+
+    <button V-on:click="age++">Increase age</button>
+    <br> <br>
+    <button V-on:click="age--">Decrease age</button>
+    <br><br>
+
+    <div @click="title = 'something else '" > change title </div>
+
     </div>
 
     <script src="app.js"></script>

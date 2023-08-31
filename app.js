@@ -7,7 +7,6 @@ const app = Vue.createApp({
             age: 29
         }
     }
-      
 })
 
 app.mount('#app')
